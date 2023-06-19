@@ -4,6 +4,6 @@
 
 import { AppRegistry } from 'react-native';
 import { name as appName } from './app.json';
-import { Splash } from './src/pages/Splash';
+import { Stack } from './src/routes/Stack';
 
-AppRegistry.registerComponent(appName, () => Splash);
+AppRegistry.registerComponent(appName, () => Stack);

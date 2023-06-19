@@ -1,10 +1,11 @@
-import { View } from "react-native";
-import Lottie from 'lottie-react-native';
+import { SplashProps } from "./types/SplashProps";
+import { SplashView } from "./SplashView";
+import { useSplash } from "./useSplash";
 
-export function Splash() {
+export function Splash({ ...props }: SplashProps) {
+  useSplash(props);
+
   return (
-    <View style={{ flex: 1, backgroundColor: '#16439E', justifyContent: 'center', alignItems: 'center' }}>
-      <Lottie style={{ width: 120, height: 120 }} source={require('../../assets/lottie/loading.json')} autoPlay loop />
-    </View>
+    <SplashView />
   )
 }
